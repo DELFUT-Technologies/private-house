@@ -14,14 +14,16 @@ respawner.addComponent(
 engine.addEntity(respawner)
 
 const respawner2 = new Entity()
-respawner2.addComponent(new BoxShape())
+const invisibleBox = new BoxShape()
+invisibleBox.isPointerBlocker = false
+respawner2.addComponent(invisibleBox)
 respawner2.addComponent(new Transform({ position: new Vector3(10, 21, 12) }))
 respawner2.addComponent(
   new OnPointerDown(
     () => {
       void movePlayerTo({ x: 2, y: 1, z: 1 }, { x: 8, y: 1, z: 8 })
     },
-    { hoverText: 'Move player' }
+    { hoverText: 'Move playerzzzzz' }
   )
 )
 

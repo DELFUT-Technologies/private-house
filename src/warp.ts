@@ -1,4 +1,6 @@
 import { movePlayerTo } from '@decentraland/RestrictedActions'
+import * as utils from '@dcl/ecs-scene-utils'
+
 const respawner = new Entity()
 respawner.addComponent(new BoxShape())
 respawner.addComponent(new Transform({ position: new Vector3(11, 1, 24.6) }))
@@ -14,17 +16,15 @@ respawner.addComponent(
 engine.addEntity(respawner)
 
 const respawner2 = new Entity()
-const invisibleBox = new BoxShape()
-invisibleBox.isPointerBlocker = false
-respawner2.addComponent(invisibleBox)
-respawner2.addComponent(new Transform({ position: new Vector3(10, 21, 12) }))
+respawner2.addComponent(new BoxShape())
+respawner2.getComponent(BoxShape).withCollisions = false
+respawner2.getComponent(BoxShape).visible = false
+respawner2.addComponent(new Transform({ position: new Vector3(10, 22, 12) }))
 respawner2.addComponent(
-  new OnPointerDown(
-    () => {
+  new utils.TriggerComponent(new utils.TriggerBoxShape, {
+    onCameraEnter: () => {
       void movePlayerTo({ x: 2, y: 1, z: 1 }, { x: 8, y: 1, z: 8 })
-    },
-    { hoverText: 'Move playerzzzzz' }
-  )
+    }
+  })
 )
-
 engine.addEntity(respawner2)

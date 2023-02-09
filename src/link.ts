@@ -1,3 +1,4 @@
+import { Parent } from "./resource"
 // entity link url
 const button_shape = new PlaneShape()
 button_shape.isPointerBlocker = false
@@ -22,10 +23,6 @@ const color = new Material()
 color.albedoColor = new Color4(0, 0, 0, 0)
 link_entity2.addComponent(color)
 //engine.addEntity(link_entity2)
-
-const Parent = new Entity()
-Parent.addComponent(new Transform({ position: new Vector3(0, 0, 0) }))
-engine.addEntity(Parent)
 
 export class links extends Entity {
   constructor(transform: Transform) {

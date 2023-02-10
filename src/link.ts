@@ -1,4 +1,4 @@
-import { Parent } from "./resource"
+import { Parent } from './resource'
 // entity link url
 const button_shape = new PlaneShape()
 button_shape.isPointerBlocker = false

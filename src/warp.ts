@@ -27,7 +27,7 @@ class WarpButton extends Entity {
         () => {
           void movePlayerTo(moveTo)
         },
-        { hoverText: 'warp to ' + toLoc }
+        { hoverText: 'にワープできる' + toLoc }
       )
     )
   }
@@ -50,7 +50,7 @@ class Warp extends Entity {
         rotation: buttonRot
       }),
       F1WarpLoc,
-      'First Floor'
+      'かめっち歴史館'
     )
 
     // F2 Button
@@ -62,7 +62,7 @@ class Warp extends Entity {
         rotation: buttonRot
       }),
       F2WarpLoc,
-      'Second Floor'
+      'かめっちTVスラジオ'
     )
 
     // F3 Button
@@ -74,7 +74,7 @@ class Warp extends Entity {
         rotation: buttonRot
       }),
       F3WarpLoc,
-      'Third Floor'
+      'かめっちバー'
     )
 
     // F4 Button
@@ -86,7 +86,7 @@ class Warp extends Entity {
         rotation: buttonRot
       }),
       F4WarpLoc,
-      'Fourth Floor'
+      '会議室'
     )
 
     // FR Button
@@ -98,7 +98,7 @@ class Warp extends Entity {
         rotation: buttonRot
       }),
       FRWarpLoc,
-      'Roof'
+      'ＤJブース'
     )
   }
 }

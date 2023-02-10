@@ -1,5 +1,5 @@
 import { movePlayerTo } from '@decentraland/RestrictedActions'
-import * as utils from '@dcl/ecs-scene-utils'
+// import * as utils from '@dcl/ecs-scene-utils'
 import { Parent } from './resource'
 
 const F1WarpLoc = new Vector3(11.31, 0.88, 4.33)
@@ -16,72 +16,85 @@ class WarpButton extends Entity {
     this.addComponent(position)
 
     const shape = new PlaneShape()
-    //shape.isPointerBlocker = false
+    shape.isPointerBlocker = false
     this.addComponent(shape)
 
     this.addComponent(new Material())
     this.getComponent(Material).albedoColor = Color3.Blue()
 
-    this.addComponent(new OnPointerDown(() =>
-      { void movePlayerTo(moveTo)},
-      { hoverText: 'warp to ' + toLoc}
-    ))
+    this.addComponent(
+      new OnPointerDown(
+        () => { void movePlayerTo(moveTo)
+        },
+        { hoverText: 'warp to ' + toLoc}
+    )
+    )
   }
 }
 
 class Warp extends Entity {
-  constructor(transform: Transform) {
+  constructor(transform: Transform, buttonRot: Quaternion) {
     super()
 
     engine.addEntity(this)
     this.setParent(Parent)
     this.addComponent(transform)
 
-    const F1 = new WarpButton(
+    // F1 Button
+    new WarpButton(
       this,
       new Transform({
-        position: new Vector3(1, 0.1, 1),
-        scale: new Vector3(0.2, 0.2, 1)
+        position: new Vector3(1, 0.15, 1),
+        scale: new Vector3(0.2, 0.2, 1),
+        rotation: buttonRot
       }),
       F1WarpLoc,
       'First Floor'
     )
 
-    const F2 = new WarpButton(
+    // F2 Button
+    new WarpButton(
       this,
       new Transform({
-        position: new Vector3(1, 0.4, 1),
-        scale: new Vector3(0.2, 0.2, 1)
+        position: new Vector3(1, 0.42, 1),
+        scale: new Vector3(0.2, 0.2, 1),
+        rotation: buttonRot
       }),
       F2WarpLoc,
       'Second Floor'
     )
 
-    const F3 = new WarpButton(
+    // F3 Button
+    new WarpButton(
       this,
       new Transform({
-        position: new Vector3(1, 0.7, 1),
-        scale: new Vector3(0.2, 0.2, 1)
+        position: new Vector3(1, 0.69, 1),
+        scale: new Vector3(0.2, 0.2, 1),
+        rotation: buttonRot
       }),
       F3WarpLoc,
       'Third Floor'
     )
 
-    const F4 = new WarpButton(
+    // F4 Button
+    new WarpButton(
       this,
       new Transform({
-        position: new Vector3(1, 1, 1),
-        scale: new Vector3(0.2, 0.2, 1)
+        position: new Vector3(1, .96, 1),
+        scale: new Vector3(0.2, 0.2, 1),
+        rotation: buttonRot
       }),
       F4WarpLoc,
       'Fourth Floor'
     )
 
-    const FR = new WarpButton(
+    // FR Button
+    new WarpButton(
       this,
       new Transform({
-        position: new Vector3(1, 1.3, 1),
-        scale: new Vector3(0.2, 0.2, 1)
+        position: new Vector3(1, 1.23, 1),
+        scale: new Vector3(0.2, 0.2, 1),
+        rotation: buttonRot
       }),
       FRWarpLoc,
       'Roof'
@@ -89,11 +102,12 @@ class Warp extends Entity {
   }
 }
 
-const F1Warp = new Warp(
+// F1 Warp
+new Warp(
   new Transform({
-    position: new Vector3(11, 0.5, 5.5),
-    rotation: Quaternion.Euler(0, 90, 0)
-  })
+    position: new Vector3(11.1, 0.5, 3.805)
+  }),
+  Quaternion.Euler(0, 90, 0)
 )
 
 /*const respawner = new Entity()

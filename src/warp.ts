@@ -24,10 +24,11 @@ class WarpButton extends Entity {
 
     this.addComponent(
       new OnPointerDown(
-        () => { void movePlayerTo(moveTo)
+        () => {
+          void movePlayerTo(moveTo)
         },
-        { hoverText: 'warp to ' + toLoc}
-    )
+        { hoverText: 'warp to ' + toLoc }
+      )
     )
   }
 }
@@ -80,7 +81,7 @@ class Warp extends Entity {
     new WarpButton(
       this,
       new Transform({
-        position: new Vector3(1, .96, 1),
+        position: new Vector3(1, 0.96, 1),
         scale: new Vector3(0.2, 0.2, 1),
         rotation: buttonRot
       }),

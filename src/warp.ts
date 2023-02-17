@@ -1,12 +1,11 @@
 import { movePlayerTo } from '@decentraland/RestrictedActions'
-// import * as utils from '@dcl/ecs-scene-utils'
 import { Parent } from './resource'
 
 const F1WarpLoc = new Vector3(11.31, 0.88, 4.33)
-const F2WarpLoc = new Vector3(11.31, 0.88, 4.33)
-const F3WarpLoc = new Vector3(11.31, 0.88, 4.33)
-const F4WarpLoc = new Vector3(11.31, 0.88, 4.33)
-const FRWarpLoc = new Vector3(11.31, 0.88, 4.33)
+const F2WarpLoc = new Vector3(3.83,7.00,26.60)
+const F3WarpLoc = new Vector3(11.96,11.54,16.75)
+const F4WarpLoc = new Vector3(6.06,14.05,27.33)
+const FRWarpLoc = new Vector3(7.26,21.46,26.79)
 
 class WarpButton extends Entity {
   constructor(parent: Warp, position: Transform, moveTo: Vector3, toLoc: string) {
@@ -16,18 +15,20 @@ class WarpButton extends Entity {
     this.addComponent(position)
 
     const shape = new PlaneShape()
+    // comment shape.isPointerBlocker for debug
     shape.isPointerBlocker = false
     this.addComponent(shape)
 
-    this.addComponent(new Material())
-    this.getComponent(Material).albedoColor = Color3.Blue()
+    // uncomment 2 lines below for debug
+    // this.addComponent(new Material())
+    // this.getComponent(Material).albedoColor = Color3.Blue()
 
     this.addComponent(
       new OnPointerDown(
         () => {
           void movePlayerTo(moveTo)
         },
-        { hoverText: 'にワープできる' + toLoc }
+        { hoverText: toLoc + 'にワープ' }
       )
     )
   }
@@ -106,35 +107,39 @@ class Warp extends Entity {
 // F1 Warp
 new Warp(
   new Transform({
-    position: new Vector3(11.1, 0.5, 3.805)
+    position: new Vector3(11.1, 0.5, 3.78)
   }),
   Quaternion.Euler(0, 90, 0)
 )
 
-/*const respawner = new Entity()
-respawner.addComponent(new BoxShape())
-respawner.addComponent(new Transform({ position: new Vector3(11, 1, 24.6) }))
-respawner.addComponent(
-  new OnPointerDown(
-    () => {
-      void movePlayerTo({ x: 10, y: 25, z: 10 }, { x: 8, y: 1, z: 8 })
-    },
-    { hoverText: 'Move player' }
-  )
+// F2 Warp
+new Warp(
+  new Transform({
+    position: new Vector3(1.91, 6.62, 25.65)
+  }),
+  Quaternion.Euler(0, 120, 0)
 )
 
-engine.addEntity(respawner)
-
-const respawner2 = new Entity()
-respawner2.addComponent(new BoxShape())
-respawner2.getComponent(BoxShape).withCollisions = false
-respawner2.getComponent(BoxShape).visible = false
-respawner2.addComponent(new Transform({ position: new Vector3(10, 22, 12) }))
-respawner2.addComponent(
-  new utils.TriggerComponent(new utils.TriggerBoxShape, {
-    onCameraEnter: () => {
-      void movePlayerTo({ x: 2, y: 1, z: 1 }, { x: 8, y: 1, z: 8 })
-    }
-  })
+// F3 Warp
+new Warp(
+  new Transform({
+    position: new Vector3(11.42,11.18,17.04)
+  }),
+  Quaternion.Euler(0, 30, 0)
 )
-engine.addEntity(respawner2)*/
+
+// F4 Warp
+new Warp(
+  new Transform({
+    position: new Vector3(4.06,13.65,26.85)
+  }),
+  Quaternion.Euler(0, 140, 0)
+)
+
+// FR Warp
+new Warp(
+  new Transform({
+    position: new Vector3(5.2,21.12,25.83)
+  }),
+  Quaternion.Euler(0, 118, 0)
+)

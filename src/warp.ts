@@ -2,7 +2,7 @@ import { movePlayerTo } from '@decentraland/RestrictedActions'
 import { Parent } from './resource'
 
 const F1WarpLoc = new Vector3(11.31, 0.88, 4.33)
-const F2WarpLoc = new Vector3(3.83, 7.00, 26.6)
+const F2WarpLoc = new Vector3(3.83, 7.0, 26.6)
 const F3WarpLoc = new Vector3(11.96, 11.54, 16.75)
 const F4WarpLoc = new Vector3(6.06, 14.05, 27.33)
 const FRWarpLoc = new Vector3(7.26, 21.46, 26.79)

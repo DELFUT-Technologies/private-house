@@ -36,7 +36,6 @@ export class links extends Entity {
 }
 
 export function Initlink() {
-
   //========================================//
   //                   2階                  //
   //========================================//

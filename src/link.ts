@@ -2,8 +2,7 @@
 const kameYoutubeLink = 'https://www.youtube.com/@kametchTV'
 const button_shape = new PlaneShape()
 button_shape.isPointerBlocker = false
-button_shape.withCollisions = false
- 
+button_shape.withCollisions = false 
 
 const link_entity2 = new Entity()
 link_entity2.addComponent(button_shape)

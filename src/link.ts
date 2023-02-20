@@ -1,7 +1,9 @@
 // entity link url
+const kameYoutubeLink = 'https://www.youtube.com/@kametchTV'
 const button_shape = new PlaneShape()
 button_shape.isPointerBlocker = false
 button_shape.withCollisions = false
+ 
 
 const link_entity2 = new Entity()
 link_entity2.addComponent(button_shape)
@@ -14,7 +16,7 @@ const transform2 = new Transform({
 link_entity2.addComponent(transform2)
 link_entity2.addComponent(
   new OnPointerDown(() => {
-    openExternalURL('https://docs.decentraland.org')
+    openExternalURL(kameYoutubeLink)
   })
 )
 // color
@@ -42,7 +44,7 @@ export class links extends Entity {
     link_entity.addComponent(button_shape)
     link_entity.addComponent(
       new OnPointerDown(() => {
-        openExternalURL('https://docs.decentraland.org')
+        openExternalURL(kameYoutubeLink)
       })
     )
     const color = new Material()

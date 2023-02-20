@@ -128,7 +128,7 @@ export function Initlink() {
       rotation: Quaternion.Euler(0, 90, 0)
     }),
     tmpLink
-  ) 
+  )
 
   //========================================//
   //                   3階                  //

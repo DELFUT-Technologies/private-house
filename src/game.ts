@@ -1,3 +1,4 @@
+import { Parent } from './resource'
 import { Initlink } from './link'
 
 // Create a main house
@@ -10,6 +11,7 @@ house.addComponent(
     rotation: Quaternion.Euler(0, 180, 0)
   })
 )
+house.setParent(Parent)
 engine.addEntity(house)
 
 // Create a wall
@@ -22,6 +24,7 @@ wall.addComponent(
     rotation: Quaternion.Euler(0, 180, 0)
   })
 )
+wall.setParent(Parent)
 engine.addEntity(wall)
 
 // animation

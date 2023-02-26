@@ -1,3 +1,4 @@
+import { Parent } from './resource'
 // use movePlayerTo for easy debugging. be immediately transported
 // to desired location upon reload
 /* import { movePlayerTo } from '@decentraland/RestrictedActions'
@@ -5,10 +6,6 @@ movePlayerTo(new Vector3(6.61, 14.05, 25.84)) */
 
 const kameYoutubeLink = 'https://www.youtube.com/@kametchTV'
 const tmpLink = 'https://www.decentraland.org'
-
-const Parent = new Entity()
-Parent.addComponent(new Transform({ position: new Vector3(0, 0, 0) }))
-engine.addEntity(Parent)
 
 export class links extends Entity {
   constructor(transform: Transform, link: string) {

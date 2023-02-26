@@ -3,7 +3,7 @@ import { Initlink } from './link'
 // Create a main house
 const house = new Entity()
 
-house.addComponent(new GLTFShape('models/10.23_modify_ryugujo_Open.glb'))
+house.addComponent(new GLTFShape('models/2023.02.20kamecchi_verse_haji_2053.glb'))
 house.addComponent(
   new Transform({
     position: new Vector3(0, 0, 0),

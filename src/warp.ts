@@ -104,42 +104,44 @@ class Warp extends Entity {
   }
 }
 
-// F1 Warp
-new Warp(
-  new Transform({
-    position: new Vector3(11.1, 0.5, 3.78)
-  }),
-  Quaternion.Euler(0, 90, 0)
-)
+export function InitWarps() {
+  // F1 Warp
+  new Warp(
+    new Transform({
+      position: new Vector3(11.1, 0.5, 3.78)
+    }),
+    Quaternion.Euler(0, 90, 0)
+  )
 
-// F2 Warp
-new Warp(
-  new Transform({
-    position: new Vector3(1.91, 6.62, 25.65)
-  }),
-  Quaternion.Euler(0, 120, 0)
-)
+  // F2 Warp
+  new Warp(
+    new Transform({
+      position: new Vector3(1.91, 6.62, 25.65)
+    }),
+    Quaternion.Euler(0, 120, 0)
+  )
 
-// F3 Warp
-new Warp(
-  new Transform({
-    position: new Vector3(11.42, 11.18, 17.04)
-  }),
-  Quaternion.Euler(0, 30, 0)
-)
+  // F3 Warp
+  new Warp(
+    new Transform({
+      position: new Vector3(11.42, 11.18, 17.04)
+    }),
+    Quaternion.Euler(0, 30, 0)
+  )
 
-// F4 Warp
-new Warp(
-  new Transform({
-    position: new Vector3(4.06, 13.65, 26.85)
-  }),
-  Quaternion.Euler(0, 140, 0)
-)
+  // F4 Warp
+  new Warp(
+    new Transform({
+      position: new Vector3(4.06, 13.65, 26.85)
+    }),
+    Quaternion.Euler(0, 140, 0)
+  )
 
-// FR Warp
-new Warp(
-  new Transform({
-    position: new Vector3(5.2, 21.12, 25.83)
-  }),
-  Quaternion.Euler(0, 118, 0)
-)
+  // FR Warp
+  new Warp(
+    new Transform({
+      position: new Vector3(5.2, 21.12, 25.83)
+    }),
+    Quaternion.Euler(0, 118, 0)
+  )
+}

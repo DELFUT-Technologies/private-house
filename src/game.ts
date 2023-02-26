@@ -1,10 +1,11 @@
 import { Parent } from './resource'
 import { Initlink } from './link'
+// import { InitWarps } from './warp'
 
 // Create a main house
 const house = new Entity()
 
-house.addComponent(new GLTFShape('models/2023.02.20kamecchi_verse_haji_2053.glb'))
+house.addComponent(new GLTFShape('models/2023_0224_kamecchi_verse_Fish_2346.glb'))
 house.addComponent(
   new Transform({
     position: new Vector3(0, 0, 0),
@@ -39,3 +40,4 @@ WallAnimator.addClip(illumination)
 illumination.play()
 
 Initlink()
+// InitWarps()

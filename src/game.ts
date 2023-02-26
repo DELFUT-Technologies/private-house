@@ -1,6 +1,6 @@
 import { Parent } from './resource'
 import { Initlink } from './link'
-import { InitWarps } from './warp'
+// import { InitWarps } from './warp'
 
 // Create a main house
 const house = new Entity()

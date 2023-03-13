@@ -1,7 +1,6 @@
 import * as utils from '@dcl/ecs-scene-utils'
 import { isPreviewMode } from '@decentraland/EnvironmentAPI'
 import { triggerEmote, PredefinedEmote } from '@decentraland/RestrictedActions'
-import { Initlink } from './link'
 import { Parent } from './resource'
 
 //// List of dance areas - add here the locations where you want dancing to happen
@@ -128,5 +127,3 @@ for (const i in danceAreas) {
     )
   )
 }
-
-Initlink

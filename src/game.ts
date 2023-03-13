@@ -4,7 +4,7 @@ import { Initlink } from './link'
 
 // Create a main house
 const house = new Entity()
-house.addComponent(new GLTFShape('models/2023.03.10_kamecchi_verse_haji_1949.glb'))
+house.addComponent(new GLTFShape('models/2023.03.11_kamecchi_verse_haji_1320_nolight.glb'))
 house.addComponent(
   new Transform({
     position: new Vector3(0, 0, 0),

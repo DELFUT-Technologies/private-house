@@ -7,7 +7,7 @@ movePlayerTo(new Vector3(6.61, 14.05, 25.84)) */
 const kameYoutubeLink = 'https://www.youtube.com/@kametchTV'
 const tmpLink = 'https://www.decentraland.org'
 
-export class links extends Entity {
+class links extends Entity {
   constructor(transform: Transform, link: string) {
     super()
 
@@ -32,7 +32,7 @@ export class links extends Entity {
   }
 }
 
-export function Initlink() {
+export function Initlinks() {
   //========================================//
   //                   2階                  //
   //========================================//

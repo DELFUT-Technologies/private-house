@@ -1,5 +1,5 @@
 import { Parent } from './resource'
-import { Initlink } from './link'
+import { Initlinks } from './link'
 // import { InitWarps } from './warp'
 
 // Create a main house
@@ -23,5 +23,5 @@ const confettiRain = new AnimationState('[保留アクション]', {
 houseAnimator.addClip(confettiRain)
 confettiRain.play()
 
-Initlink()
+Initlinks()
 // InitWarps()

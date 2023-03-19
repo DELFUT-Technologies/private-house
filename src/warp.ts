@@ -1,11 +1,11 @@
 import { movePlayerTo } from '@decentraland/RestrictedActions'
 import { Parent } from './resource'
 
-const F1WarpLoc = new Vector3(17.92, 1.10, 4.69)
+const F1WarpLoc = new Vector3(17.92, 1.1, 4.69)
 const F2WarpLoc = new Vector3(26.65, 7.23, 12.23)
-const F3WarpLoc = new Vector3(16.80, 11.78, 9.63)
+const F3WarpLoc = new Vector3(16.8, 11.78, 9.63)
 const F4WarpLoc = new Vector3(27.22, 14.26, 9.89)
-const FRWarpLoc = new Vector3(26.80, 21.72, 8.82)
+const FRWarpLoc = new Vector3(26.8, 21.72, 8.82)
 
 class WarpButton extends Entity {
   constructor(parent: Warp, position: Transform, moveTo: Vector3, toLoc: string) {
@@ -120,7 +120,7 @@ export function InitWarps() {
     }),
     Quaternion.Euler(0, 95, 0)
   )
-  
+
   // F3 Warp
   new Warp(
     new Transform({

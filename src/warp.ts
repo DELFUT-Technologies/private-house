@@ -1,11 +1,11 @@
 import { movePlayerTo } from '@decentraland/RestrictedActions'
 import { Parent } from './resource'
 
-const F1WarpLoc = new Vector3(11.31, 0.88, 4.33)
-const F2WarpLoc = new Vector3(3.83, 7.0, 26.6)
-const F3WarpLoc = new Vector3(11.96, 11.54, 16.75)
-const F4WarpLoc = new Vector3(6.06, 14.05, 27.33)
-const FRWarpLoc = new Vector3(7.26, 21.46, 26.79)
+const F1WarpLoc = new Vector3(17.92,1.10,4.69)
+const F2WarpLoc = new Vector3(26.65,7.23,12.23)
+const F3WarpLoc = new Vector3(16.80,11.78,9.63)
+const F4WarpLoc = new Vector3(27.22,14.26,9.89)
+const FRWarpLoc = new Vector3(26.80,21.72,8.82)
 
 class WarpButton extends Entity {
   constructor(parent: Warp, position: Transform, moveTo: Vector3, toLoc: string) {
@@ -108,40 +108,40 @@ export function InitWarps() {
   // F1 Warp
   new Warp(
     new Transform({
-      position: new Vector3(11.1, 0.5, 3.78)
+      position: new Vector3(10.22, 0.93, 17.91)
     }),
-    Quaternion.Euler(0, 90, 0)
+    Quaternion.Euler(0, 12, 0)
   )
 
   // F2 Warp
   new Warp(
     new Transform({
-      position: new Vector3(1.91, 6.62, 25.65)
+      position: new Vector3(2, 7.22, 25.54)
     }),
-    Quaternion.Euler(0, 120, 0)
+    Quaternion.Euler(0, 95, 0)
   )
-
+  
   // F3 Warp
   new Warp(
     new Transform({
-      position: new Vector3(11.42, 11.18, 17.04)
+      position: new Vector3(4.42, 11.33, 16.43)
     }),
-    Quaternion.Euler(0, 30, 0)
+    Quaternion.Euler(0, 140, 0)
   )
 
   // F4 Warp
   new Warp(
     new Transform({
-      position: new Vector3(4.06, 13.65, 26.85)
+      position: new Vector3(4.12, 14.25, 26.69)
     }),
-    Quaternion.Euler(0, 140, 0)
+    Quaternion.Euler(0, 120, 0)
   )
 
   // FR Warp
   new Warp(
     new Transform({
-      position: new Vector3(5.2, 21.12, 25.83)
+      position: new Vector3(5.27, 21.71, 25.7)
     }),
-    Quaternion.Euler(0, 118, 0)
+    Quaternion.Euler(0, 108, 0)
   )
 }

@@ -5,7 +5,15 @@ import { Parent } from './resource'
 movePlayerTo(new Vector3(6.61, 14.05, 25.84)) */
 
 const kameYoutubeLink = 'https://www.youtube.com/@kametchTV'
-const tmpLink = 'https://www.decentraland.org'
+const DJ社長 = 'https://www.youtube.com/watch?v=ny7PE7lCzgk'
+const 中野信子 = 'https://www.youtube.com/watch?v=3dKt2MfAsy8'
+const メタップスCEO = 'https://www.youtube.com/watch?v=NbGk7Bb3TgI'
+const ホームレス小谷 = 'https://www.youtube.com/watch?v=S-VNN2-FO3E'
+const bunjiro = 'https://www.youtube.com/watch?v=-dxGltHNjUY&t=130s'
+const 田原総一朗 = 'https://www.youtube.com/watch?v=lm0wcOqRD4g'
+const 家入一真 = 'https://www.youtube.com/watch?v=r8vLDWoI3Cg'
+const 脳科学者 = 'https://www.youtube.com/watch?v=XUTGYvCPBQU'
+const 外国人 = 'https://www.youtube.com/watch?v=0HD7pFzjvSY'
 
 class links extends Entity {
   constructor(transform: Transform, link: string) {
@@ -54,7 +62,7 @@ export function Initlinks() {
       scale: new Vector3(1, 1, 1),
       rotation: Quaternion.Euler(0, 0, 0)
     }),
-    tmpLink
+    DJ社長
   )
 
   // ----------- Back wall ----------//
@@ -65,7 +73,7 @@ export function Initlinks() {
       scale: new Vector3(1, 1, 1),
       rotation: Quaternion.Euler(0, 0, 0)
     }),
-    tmpLink
+    中野信子
   )
   // Mid
   new links(
@@ -74,7 +82,7 @@ export function Initlinks() {
       scale: new Vector3(1, 1, 1),
       rotation: Quaternion.Euler(0, 0, 0)
     }),
-    tmpLink
+    メタップスCEO
   )
   // Right
   new links(
@@ -83,7 +91,7 @@ export function Initlinks() {
       scale: new Vector3(1, 1, 1),
       rotation: Quaternion.Euler(0, 30, 0)
     }),
-    tmpLink
+    ホームレス小谷
   )
 
   // ----------- Left wall ----------//
@@ -94,7 +102,7 @@ export function Initlinks() {
       scale: new Vector3(1, 1, 1),
       rotation: Quaternion.Euler(0, 90, 0)
     }),
-    tmpLink
+    bunjiro
   )
   // Right
   new links(
@@ -103,7 +111,7 @@ export function Initlinks() {
       scale: new Vector3(1, 1, 1),
       rotation: Quaternion.Euler(0, 90, 0)
     }),
-    tmpLink
+    田原総一朗
   )
 
   // ----------- Right wall ----------//
@@ -114,7 +122,7 @@ export function Initlinks() {
       scale: new Vector3(1, 1, 1),
       rotation: Quaternion.Euler(0, 90, 0)
     }),
-    tmpLink
+    家入一真
   )
   // Right
   new links(
@@ -123,7 +131,7 @@ export function Initlinks() {
       scale: new Vector3(1, 1, 1),
       rotation: Quaternion.Euler(0, 90, 0)
     }),
-    tmpLink
+    脳科学者
   )
 
   //========================================//
@@ -135,7 +143,7 @@ export function Initlinks() {
       scale: new Vector3(3.5, 2, 1),
       rotation: Quaternion.Euler(0, 47, 0)
     }),
-    tmpLink
+    外国人
   )
 
   //========================================//

@@ -2,7 +2,7 @@ import { movePlayerTo } from '@decentraland/RestrictedActions'
 import { Parent } from './resource'
 
 const F1WarpLoc = new Vector3(17.92, 1.1, 4.69)
-const F2WarpLoc = new Vector3(26.65, 7.23, 12.23)
+const F2WarpLoc = new Vector3(27.09, 7.23, 4.19)
 const F3WarpLoc = new Vector3(16.8, 11.78, 9.63)
 const F4WarpLoc = new Vector3(27.22, 14.26, 9.89)
 const FRWarpLoc = new Vector3(26.8, 21.72, 8.82)
@@ -116,9 +116,9 @@ export function InitWarps() {
   // F2 Warp
   new Warp(
     new Transform({
-      position: new Vector3(2, 7.22, 25.54)
+      position: new Vector3(11.54, 7.22, 26.82)
     }),
-    Quaternion.Euler(0, 95, 0)
+    Quaternion.Euler(0, 70, 0)
   )
 
   // F3 Warp

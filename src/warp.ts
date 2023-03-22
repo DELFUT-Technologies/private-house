@@ -46,7 +46,7 @@ class Warp extends Entity {
     new WarpButton(
       this,
       new Transform({
-        position: new Vector3(1, 0.15, 1),
+        position: new Vector3(1, 0.05, 1),
         scale: new Vector3(0.2, 0.2, 1),
         rotation: buttonRot
       }),
@@ -58,7 +58,7 @@ class Warp extends Entity {
     new WarpButton(
       this,
       new Transform({
-        position: new Vector3(1, 0.42, 1),
+        position: new Vector3(1, 0.38, 1),
         scale: new Vector3(0.2, 0.2, 1),
         rotation: buttonRot
       }),
@@ -70,7 +70,7 @@ class Warp extends Entity {
     new WarpButton(
       this,
       new Transform({
-        position: new Vector3(1, 0.69, 1),
+        position: new Vector3(1, 0.72, 1),
         scale: new Vector3(0.2, 0.2, 1),
         rotation: buttonRot
       }),
@@ -82,7 +82,7 @@ class Warp extends Entity {
     new WarpButton(
       this,
       new Transform({
-        position: new Vector3(1, 0.96, 1),
+        position: new Vector3(1, 1.07, 1),
         scale: new Vector3(0.2, 0.2, 1),
         rotation: buttonRot
       }),
@@ -94,7 +94,7 @@ class Warp extends Entity {
     new WarpButton(
       this,
       new Transform({
-        position: new Vector3(1, 1.23, 1),
+        position: new Vector3(1, 1.41, 1),
         scale: new Vector3(0.2, 0.2, 1),
         rotation: buttonRot
       }),

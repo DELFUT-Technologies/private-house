@@ -7,13 +7,13 @@ movePlayerTo(new Vector3(6.61, 14.05, 25.84)) */
 const kameYoutubeLink = 'https://www.youtube.com/@kametchTV'
 const DJ社長 = 'https://www.youtube.com/watch?v=ny7PE7lCzgk'
 const 中野信子 = 'https://www.youtube.com/watch?v=3dKt2MfAsy8'
-const メタップスCEO = 'https://www.youtube.com/watch?v=NbGk7Bb3TgI'
-const ホームレス小谷 = 'https://www.youtube.com/watch?v=S-VNN2-FO3E'
 const bunjiro = 'https://www.youtube.com/watch?v=-dxGltHNjUY&t=130s'
 const 田原総一朗 = 'https://www.youtube.com/watch?v=lm0wcOqRD4g'
 const 家入一真 = 'https://www.youtube.com/watch?v=r8vLDWoI3Cg'
 const 脳科学者 = 'https://www.youtube.com/watch?v=XUTGYvCPBQU'
-const 外国人 = 'https://www.youtube.com/watch?v=0HD7pFzjvSY'
+const メタップスCEO = 'https://www.youtube.com/watch?v=NbGk7Bb3TgI'
+// const ホームレス小谷 = 'https://www.youtube.com/watch?v=S-VNN2-FO3E'
+// const 外国人 = 'https://www.youtube.com/watch?v=0HD7pFzjvSY'
 
 class links extends Entity {
   constructor(transform: Transform, link: string) {
@@ -35,6 +35,7 @@ class links extends Entity {
     )
     const color = new Material()
     color.albedoColor = new Color4(0, 0, 0, 0)
+    // color.albedoColor = Color3.Green()
     link_entity.addComponent(color)
     link_entity.setParent(this)
   }
@@ -49,57 +50,48 @@ export function Initlinks() {
   // Main screen
   new links(
     new Transform({
-      position: new Vector3(7.64, 6.25, 11.5),
+      position: new Vector3(7.64, 6.25, 10.9),
       scale: new Vector3(7.6, 4.5, 1),
       rotation: Quaternion.Euler(0, 0, 0)
     }),
     kameYoutubeLink
-  )
-  // Small image to the left
-  new links(
-    new Transform({
-      position: new Vector3(11.8, 4.7, 11),
-      scale: new Vector3(1, 1, 1),
-      rotation: Quaternion.Euler(0, 0, 0)
-    }),
-    DJ社長
   )
 
   // ----------- Back wall ----------//
   // Left
   new links(
     new Transform({
-      position: new Vector3(6.7, 4.7, 18.7),
-      scale: new Vector3(1, 1, 1),
+      position: new Vector3(5.05, 4.8, 18.81),
+      scale: new Vector3(1.3, 1.3, 1),
       rotation: Quaternion.Euler(0, 0, 0)
     }),
     中野信子
   )
-  // Mid
-  new links(
-    new Transform({
-      position: new Vector3(9.8, 4.7, 18.7),
-      scale: new Vector3(1, 1, 1),
-      rotation: Quaternion.Euler(0, 0, 0)
-    }),
-    メタップスCEO
-  )
   // Right
   new links(
     new Transform({
-      position: new Vector3(11.2, 4.7, 18.5),
-      scale: new Vector3(1, 1, 1),
-      rotation: Quaternion.Euler(0, 30, 0)
+      position: new Vector3(6.7, 4.8, 18.81),
+      scale: new Vector3(1.3, 1.3, 1),
+      rotation: Quaternion.Euler(0, 0, 0)
     }),
-    ホームレス小谷
+    メタップスCEO
   )
 
   // ----------- Left wall ----------//
   // Left
   new links(
     new Transform({
-      position: new Vector3(11.8, 4.7, 17.4),
-      scale: new Vector3(1, 1, 1),
+      position: new Vector3(12.82, 4.82, 16.15),
+      scale: new Vector3(1.3, 1.3, 1),
+      rotation: Quaternion.Euler(0, 90, 0)
+    }),
+    DJ社長
+  )
+  // Middle
+  new links(
+    new Transform({
+      position: new Vector3(12.87, 4.84, 13.8),
+      scale: new Vector3(1.2, 1.2, 1),
       rotation: Quaternion.Euler(0, 90, 0)
     }),
     bunjiro
@@ -107,8 +99,8 @@ export function Initlinks() {
   // Right
   new links(
     new Transform({
-      position: new Vector3(12.8, 4.7, 11.8),
-      scale: new Vector3(1, 1, 1),
+      position: new Vector3(12.96, 4.75, 11.9),
+      scale: new Vector3(1.3, 1.3, 1),
       rotation: Quaternion.Euler(0, 90, 0)
     }),
     田原総一朗
@@ -118,32 +110,20 @@ export function Initlinks() {
   // Left
   new links(
     new Transform({
-      position: new Vector3(1.5, 4.7, 17.9),
-      scale: new Vector3(1, 1, 1),
-      rotation: Quaternion.Euler(0, 90, 0)
-    }),
-    家入一真
-  )
-  // Right
-  new links(
-    new Transform({
-      position: new Vector3(1.5, 4.7, 16.2),
-      scale: new Vector3(1, 1, 1),
+      position: new Vector3(1.5, 4.68, 16.3),
+      scale: new Vector3(1.35, 1.3, 1),
       rotation: Quaternion.Euler(0, 90, 0)
     }),
     脳科学者
   )
-
-  //========================================//
-  //                   3階                  //
-  //========================================//
+  // Right
   new links(
     new Transform({
-      position: new Vector3(7.8, 8.8, 15.1),
-      scale: new Vector3(3.5, 2, 1),
-      rotation: Quaternion.Euler(0, 47, 0)
+      position: new Vector3(1.5, 4.68, 18),
+      scale: new Vector3(1.35, 1.3, 1),
+      rotation: Quaternion.Euler(0, 90, 0)
     }),
-    外国人
+    家入一真
   )
 
   //========================================//

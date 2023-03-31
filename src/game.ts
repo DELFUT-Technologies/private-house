@@ -4,7 +4,7 @@ import { InitWarps } from './warp'
 
 // Create a main house
 const house = new Entity()
-house.addComponent(new GLTFShape('models/2023.03.29_kamecchi_verse_haji_1233.glb'))
+house.addComponent(new GLTFShape('models/2023.03.31.kamecchi_verse_haji_1002.glb'))
 house.addComponent(
   new Transform({
     position: new Vector3(0, 0, 0),

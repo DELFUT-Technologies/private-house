@@ -3,24 +3,36 @@ import { Parent } from './resource'
 /* import { movePlayerTo } from '@decentraland/RestrictedActions'
 movePlayerTo(new Vector3(15.84,4.21,5.47)) */
 
-const 田原 = new VideoClip('https://player.vimeo.com/external/815578435.m3u8?s=9951ff330740401e56a797145fbfb19fd652d81b')
-const DJ = new VideoClip('https://player.vimeo.com/external/815579062.m3u8?s=0ba35a295dd5cba90ad1cf874d4ff0de045c6b8e')
-const ピッコ1 = new VideoClip('https://player.vimeo.com/external/815579867.m3u8?s=75efdb6e10481d3a032e7cf7e147c7b1dcae9a53')
-const ピッコ2 = new VideoClip('https://player.vimeo.com/external/815580887.m3u8?s=751dec8fdf55747114a68e45c90ecc5d45f07cf4')
-const 佐藤航陽2_8 = new VideoClip('https://player.vimeo.com/external/815581441.m3u8?s=f94b3f028e9133e275c55faea74fe1d04ddb581c')
-const 佐藤航陽4_8 = new VideoClip('https://player.vimeo.com/external/815581928.m3u8?s=c4f98dc939dcc50722373280b2b88467a021fff2')
-const メタップス = new VideoClip('https://player.vimeo.com/external/816124839.m3u8?s=f2780ab5355cc214dd86b1952664d868ec2298be')
+const 田原 = new VideoClip(
+  'https://player.vimeo.com/external/815578435.m3u8?s=9951ff330740401e56a797145fbfb19fd652d81b'
+)
+const DJ = new VideoClip(
+  'https://player.vimeo.com/external/815579062.m3u8?s=0ba35a295dd5cba90ad1cf874d4ff0de045c6b8e'
+)
+const ピッコ1 = new VideoClip(
+  'https://player.vimeo.com/external/815579867.m3u8?s=75efdb6e10481d3a032e7cf7e147c7b1dcae9a53'
+)
+const ピッコ2 = new VideoClip(
+  'https://player.vimeo.com/external/815580887.m3u8?s=751dec8fdf55747114a68e45c90ecc5d45f07cf4'
+)
+const 佐藤航陽2_8 = new VideoClip(
+  'https://player.vimeo.com/external/815581441.m3u8?s=f94b3f028e9133e275c55faea74fe1d04ddb581c'
+)
+const 佐藤航陽4_8 = new VideoClip(
+  'https://player.vimeo.com/external/815581928.m3u8?s=c4f98dc939dcc50722373280b2b88467a021fff2'
+)
+const メタップス = new VideoClip(
+  'https://player.vimeo.com/external/816124839.m3u8?s=f2780ab5355cc214dd86b1952664d868ec2298be'
+)
 // NEW VIDEO HERE
-const vid8 = new VideoClip('https://player.vimeo.com/external/816124839.m3u8?s=f2780ab5355cc214dd86b1952664d868ec2298be')
+const vid8 = new VideoClip(
+  'https://player.vimeo.com/external/816124839.m3u8?s=f2780ab5355cc214dd86b1952664d868ec2298be'
+)
 
 class TriggerScreen extends Entity {
     public videoMaterial: Material
-  
-    constructor(
-      videotexture: VideoTexture,
-      transform: Transform,
-      triggerShape: utils.TriggerBoxShape
-    ) {
+
+    constructor(videotexture: VideoTexture, transform: Transform, triggerShape: utils.TriggerBoxShape) {
       super()
       engine.addEntity(this)
       this.setParent(Parent)

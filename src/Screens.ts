@@ -1,7 +1,7 @@
 import * as utils from '@dcl/ecs-scene-utils'
 import { Parent } from './resource'
 /* import { movePlayerTo } from '@decentraland/RestrictedActions'
-movePlayerTo(new Vector3(15.84,4.21,5.47)) */
+movePlayerTo(new Vector3(15.84,4.21,5.47)); */
 
 const 田原 = new VideoClip(
   'https://player.vimeo.com/external/815578435.m3u8?s=9951ff330740401e56a797145fbfb19fd652d81b'

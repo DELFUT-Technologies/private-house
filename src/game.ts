@@ -1,7 +1,7 @@
 import { Parent } from './resource'
 // import { Initlinks } from './link'
 import { InitWarps } from './warp'
-import { InitScreens } from './screens'
+import { InitScreens } from './screen'
 
 // Create a main house
 const house = new Entity()

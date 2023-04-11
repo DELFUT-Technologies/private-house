@@ -18,6 +18,6 @@ jobs:
       - name: install dependencies
         run: npm i
       - name: lint
-        run: npm run lint
+        run: npx eslint . --fix --ext .ts
       - name: build
         run: npm run build

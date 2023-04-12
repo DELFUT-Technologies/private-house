@@ -5,7 +5,7 @@ import { InitScreens } from './screen'
 
 // Create a main house
 const house = new Entity()
-house.addComponent(new GLTFShape('models/2023.04.10.kamecchi_verse_haji_1538.glb'))
+house.addComponent(new GLTFShape('models/2023.04.12.kamecchi_verse_haji_0356.glb'))
 house.addComponent(
   new Transform({
     position: new Vector3(0, 0, 0),

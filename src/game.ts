@@ -2,6 +2,7 @@ import { Parent } from './resource'
 // import { Initlinks } from './link'
 import { InitWarps } from './warp'
 import { InitScreens } from './screen'
+import { InitKamech } from './talkingKamech'
 
 // Create a main house
 const house = new Entity()
@@ -27,3 +28,4 @@ confettiRain.play()
 // Initlinks()
 InitWarps()
 InitScreens()
+InitKamech()

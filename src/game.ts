@@ -29,7 +29,7 @@ const kamech = new Entity()
 kamech.addComponent(new GLTFShape('models/bar_kamecchi.glb'))
 kamech.addComponent(
   new Transform({
-    position: new Vector3(1, 1.29, 1),
+    position: new Vector3(0, 0, 0),
     // position: new Vector3(15.48,11.54,7.85),
     rotation: Quaternion.Euler(0, 180, 0)
   })

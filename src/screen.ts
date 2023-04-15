@@ -1,6 +1,7 @@
 import * as utils from '@dcl/ecs-scene-utils'
 import { Parent } from './resource'
-import { movePlayerTo } from '@decentraland/RestrictedActions'
+/* import { movePlayerTo } from '@decentraland/RestrictedActions'
+movePlayerTo(new Vector3(17.08,4.21,11.23)) */
 
 const 田原 = new VideoClip(
   'https://player.vimeo.com/external/815578435.m3u8?s=9951ff330740401e56a797145fbfb19fd652d81b'
@@ -54,7 +55,7 @@ class TriggerScreen extends Entity {
         onCameraExit: () => {
           videotexture.playing = false
         },
-        enableDebug: true
+        // enableDebug: true
       })
     )
   }
@@ -78,8 +79,7 @@ export function InitScreens() {
   )
 
   // ----------- Back wall ----------//
-  // Right
-  movePlayerTo(new Vector3(17.08,4.21,11.23))
+  // Right 
   new TriggerScreen(
     new VideoTexture(ピッコ1),
     new Transform({

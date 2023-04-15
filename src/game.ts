@@ -2,7 +2,7 @@ import { Parent } from './resource'
 // import { Initlinks } from './link'
 import { InitWarps } from './warp'
 import { InitScreens } from './screen'
-import { InitKamech } from './talkingKamech'
+import { InitKamecchi } from './talkingKamecchi'
 
 // Create a main house
 const house = new Entity()
@@ -25,20 +25,7 @@ const confettiRain = new AnimationState('[保留アクション]', {
 houseAnimator.addClip(confettiRain)
 confettiRain.play()
 
-
-const kamech = new Entity()
-kamech.addComponent(new GLTFShape('models/bar_kamecchi.glb'))
-kamech.addComponent(
-  new Transform({
-    position: new Vector3(0, 0, 0),
-    // position: new Vector3(15.48,11.54,7.85),
-    rotation: Quaternion.Euler(0, 180, 0)
-  })
-)
-kamech.setParent(Parent)
-engine.addEntity(kamech)
-
 // Initlinks()
 InitWarps()
 InitScreens()
-InitKamech()
+InitKamecchi()

@@ -56,7 +56,7 @@ const kamecchiDialog: Dialog[] = [
   ]
 
 export function InitKamecchi() {
-    const Kamecchi = new NPC(
+    new NPC(
         {
             position: new Vector3(11.46,12,11.82),
             rotation: Quaternion.Euler(0, 180, 0)

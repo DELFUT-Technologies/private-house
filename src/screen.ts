@@ -24,10 +24,6 @@ const 佐藤航陽4_8 = new VideoClip(
 const メタップス = new VideoClip(
   'https://player.vimeo.com/external/816124839.m3u8?s=f2780ab5355cc214dd86b1952664d868ec2298be'
 )
-// NEW VIDEO HERE
-const vid8 = new VideoClip(
-  'https://player.vimeo.com/external/816124839.m3u8?s=f2780ab5355cc214dd86b1952664d868ec2298be'
-)
 
 class TriggerScreen extends Entity {
   public videoMaterial: Material
@@ -83,16 +79,6 @@ export function InitScreens() {
   )
 
   // ----------- Back wall ----------//
-  // Left
-  new TriggerScreen(
-    new VideoTexture(DJvid),
-    new Transform({
-      position: new Vector3(5.01, 4.8, 18.89),
-      scale: new Vector3(1.25, 1.3, 1),
-      rotation: Quaternion.Euler(0, 182, 0)
-    }),
-    new utils.TriggerBoxShape(new Vector3(2.5, 0, 1), new Vector3(-1.25, 0.5, 0))
-  )
   // Right
   new TriggerScreen(
     new VideoTexture(ピッコ1),
@@ -149,7 +135,7 @@ export function InitScreens() {
   )
   // Right
   new TriggerScreen(
-    new VideoTexture(vid8),
+    new VideoTexture(DJvid),
     new Transform({
       position: new Vector3(1.5, 4.76, 17.91),
       scale: new Vector3(1.35, 1.33, 1),

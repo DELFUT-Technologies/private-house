@@ -1,11 +1,11 @@
 import { Parent } from './resource'
-// import { Initlinks } from './link'
 import { InitWarps } from './warp'
 import { InitScreens } from './screen'
+import { InitKamecchi } from './talkingKamecchi'
 
 // Create a main house
 const house = new Entity()
-house.addComponent(new GLTFShape('models/2023.04.12.kamecchi_verse_haji_0356.glb'))
+house.addComponent(new GLTFShape('models/2023.04.14.kamecchi_verse_haji_0034_2.glb'))
 house.addComponent(
   new Transform({
     position: new Vector3(0, 0, 0),
@@ -24,6 +24,6 @@ const confettiRain = new AnimationState('[保留アクション]', {
 houseAnimator.addClip(confettiRain)
 confettiRain.play()
 
-// Initlinks()
 InitWarps()
 InitScreens()
+InitKamecchi()

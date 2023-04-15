@@ -58,11 +58,11 @@ const kamecchiDialog: Dialog[] = [
 export function InitKamecchi() {
     new NPC(
         {
-            position: new Vector3(11.46,12,11.82),
-            rotation: Quaternion.Euler(0, 180, 0)
+            position: new Vector3(11.46, 10.63, 11.82),
+            rotation: Quaternion.Euler(0, 270, 0)
         },
         // TODO: Get bar model from haji
-        'models/Robots_betty_4M_0T_1050Tris.glb',
+        'models/bar_kamecchi_2023.04.15_2126.glb',
         () => {
             // TODO: アニメーションをランダム化する
             // [うなづく、かしげる、笑う、首を振る]
@@ -76,7 +76,7 @@ export function InitKamecchi() {
             // Kamecchi.talk(kamecchiDialog)
         },
         {
-            faceUser: true,
+            faceUser: false,
             darkUI: true,
             hoverText: 'Order a drink',
             onlyClickTrigger: true,

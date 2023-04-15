@@ -79,7 +79,7 @@ export function InitScreens() {
   )
 
   // ----------- Back wall ----------//
-  // Right 
+  // Right
   new TriggerScreen(
     new VideoTexture(ピッコ1),
     new Transform({
@@ -89,7 +89,7 @@ export function InitScreens() {
     }),
     new utils.TriggerBoxShape(new Vector3(2.5, 0, 1), new Vector3(-1.25, 0.5, 0))
   )
-//
+
   // ----------- Left wall ----------//
   // Left
   new TriggerScreen(

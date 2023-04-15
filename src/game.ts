@@ -1,5 +1,4 @@
 import { Parent } from './resource'
-// import { Initlinks } from './link'
 import { InitWarps } from './warp'
 import { InitScreens } from './screen'
 import { InitKamecchi } from './talkingKamecchi'
@@ -25,7 +24,6 @@ const confettiRain = new AnimationState('[保留アクション]', {
 houseAnimator.addClip(confettiRain)
 confettiRain.play()
 
-// Initlinks()
 InitWarps()
 InitScreens()
 InitKamecchi()

@@ -5,7 +5,7 @@ import { InitKamecchi } from './talkingKamecchi'
 
 // Create a main house
 const house = new Entity()
-house.addComponent(new GLTFShape('models/2023.04.14.kamecchi_verse_haji_0034_2.glb'))
+house.addComponent(new GLTFShape('models/2023.04.16.kamecchi_verse_haji_0321.glb'))
 house.addComponent(
   new Transform({
     position: new Vector3(0, 0, 0),

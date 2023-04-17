@@ -1,7 +1,7 @@
 import * as utils from '@dcl/ecs-scene-utils'
 import { Parent } from './resource'
 /* import { movePlayerTo } from '@decentraland/RestrictedActions'
-movePlayerTo(new Vector3(15.84,4.21,5.47)); */
+movePlayerTo(new Vector3(17.08,4.21,11.23)) */
 
 const 田原 = new VideoClip(
   'https://player.vimeo.com/external/815578435.m3u8?s=9951ff330740401e56a797145fbfb19fd652d81b'
@@ -54,7 +54,7 @@ class TriggerScreen extends Entity {
         },
         onCameraExit: () => {
           videotexture.playing = false
-        }
+        },
         // enableDebug: true
       })
     )
@@ -83,9 +83,9 @@ export function InitScreens() {
   new TriggerScreen(
     new VideoTexture(ピッコ1),
     new Transform({
-      position: new Vector3(6.7, 4.8, 18.81),
+      position: new Vector3(6.62, 4.8, 18.89),
       scale: new Vector3(1.3, 1.3, 1),
-      rotation: Quaternion.Euler(0, 180, 0)
+      rotation: Quaternion.Euler(0, 182, 0)
     }),
     new utils.TriggerBoxShape(new Vector3(2.5, 0, 1), new Vector3(-1.25, 0.5, 0))
   )
@@ -115,8 +115,8 @@ export function InitScreens() {
   new TriggerScreen(
     new VideoTexture(佐藤航陽4_8),
     new Transform({
-      position: new Vector3(12.96, 4.75, 11.87),
-      scale: new Vector3(1.38, 1.37, 1),
+      position: new Vector3(12.883, 4.81, 11.54),
+      scale: new Vector3(1.2, 1.2, 1),
       rotation: Quaternion.Euler(0, 270, 0)
     }),
     new utils.TriggerBoxShape(new Vector3(1, 0, 2), new Vector3(0, 0.5, 1))

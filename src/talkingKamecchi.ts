@@ -85,7 +85,7 @@ export function InitKamecchi() {
             position: new Vector3(11.46, 10.70, 11.82),
             rotation: Quaternion.Euler(0, 270, 0)
         },
-        'models/bar_kamecchi_2023.04.17_1128.glb',
+        'models/bar_kamecchi_2023.04.18_0044.glb',
         () => {
 
             animTrigger(1)

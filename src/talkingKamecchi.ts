@@ -16,7 +16,7 @@ function animTrigger(index: number) {
 // chatGPTが間に合わなかった場合のバックアップダイアログ
 const kamecchiDialog: Dialog[] = [
     { // 0
-        text: "Welcome! I'm glad you could make it. Please, make yourself at home. What can I get for you?",
+        text: "ようこそへ！来てくれてうれしく思います。どうぞ、くつろいでください。ご注文は何でしょうか？",
         isQuestion: true,
         buttons: [
             {label: 'おすすめは', goToDialog: 1, triggeredActions: () => animTrigger(2)},
@@ -26,18 +26,18 @@ const kamecchiDialog: Dialog[] = [
         ]
     },
     { // 1
-        text: 'We have a great selection of Japanese craft beers on tap. The Yona Yona Ale is one of our most popular choices. Would you like to try that?',
+        text: '日本のクラフトビールを豊富に取り揃えています。中でも「よなよなエール」は人気の一品です。それどうですか？',
         isQuestion: true,
         fontSize: 20,
         buttons: [
-            {label: 'Yona Yona', goToDialog: 2, triggeredActions: () => animTrigger(1)},
+            {label: 'よなよな', goToDialog: 2, triggeredActions: () => animTrigger(1)},
             {label: 'ビール', goToDialog: 2, triggeredActions: () => animTrigger(1)},
             {label: 'ハイボール', goToDialog: 2, triggeredActions: () => animTrigger(1)},
             {label: '梅酒', goToDialog: 2, triggeredActions: () => animTrigger(1)},
         ]
     },
     { // 2
-        text: 'Coming right up...',
+        text: '了解です。ちょっと待ってください...',
         isQuestion: true,
         buttons: [
             {label: 'ありがとう', goToDialog: 5, triggeredActions: () => randAnimTrigger(2)},
@@ -45,7 +45,7 @@ const kamecchiDialog: Dialog[] = [
         ]
     },
     { // 3
-        text: "Well, I've always been interested in exploring new technologies and finding ways to connect people. When the metaverse started to gain traction, I saw an opportunity to create a new kind of social space that could bring people together from all over the world. And what better way to do that than with a bar, right?",
+        text: "私は、常に新しいテクノロジーを探求し、人々をつなぐ方法を見つけることに興味がありました。メタバースが普及し始めた頃、私は世界中の人々を結びつけることができる新しいタイプのソーシャルスペースを作る機会を得たのです。そして、それを実現するのに、バー以上の方法があるだろうか？",
         isQuestion: true,
         fontSize: 18,
         buttons: [
@@ -54,16 +54,16 @@ const kamecchiDialog: Dialog[] = [
         ]
     }, 
     { // 4
-        text: "I think it has a lot of potential. The metaverse is still in its early stages, but I believe it will eventually become a major part of our lives, just like the internet did. It's a whole new world of possibilities, and I'm excited to see where it takes us... Here is your drink",
+        text: "多くの可能性を秘めていると思います。メタバースはまだ初期段階ですが、インターネットがそうであったように、いずれは私たちの生活の主要な部分を占めるようになると思います。まったく新しい可能性を秘めた世界ですから、その行く末が楽しみです...ドリンクはこちらです",
         isQuestion: true,
-        fontSize: 20,
+        fontSize: 18,
         buttons: [
             {label: "ありがとう!", goToDialog: 5, triggeredActions: () => randAnimTrigger(2)},
             {label: "またね!", goToDialog: 5, triggeredActions: () => randAnimTrigger(2)},
         ]
     },
     { // 5
-        text: 'I hope to see you again soon.',
+        text: 'また近いうちにお会いできることを楽しみにしています!',
         isEndOfDialog: true,
         triggeredByNext: () => {
             animTrigger(1)

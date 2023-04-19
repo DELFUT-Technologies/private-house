@@ -63,7 +63,7 @@ const kamecchiDialog: Dialog[] = [
         ]
     },
     { // 5
-        text: 'I hope to see you again soon.',
+        text: 'また近いうちにお会いできることを楽しみにしています!',
         isEndOfDialog: true,
         triggeredByNext: () => {
             animTrigger(1)

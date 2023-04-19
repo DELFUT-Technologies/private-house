@@ -56,7 +56,7 @@ const kamecchiDialog: Dialog[] = [
     { // 4
         text: "多くの可能性を秘めていると思います。メタバースはまだ初期段階ですが、インターネットがそうであったように、いずれは私たちの生活の主要な部分を占めるようになると思います。まったく新しい可能性を秘めた世界ですから、その行く末が楽しみです...ドリンクはこちらです",
         isQuestion: true,
-        fontSize: 20,
+        fontSize: 18,
         buttons: [
             {label: "ありがとう!", goToDialog: 5, triggeredActions: () => randAnimTrigger(2)},
             {label: "またね!", goToDialog: 5, triggeredActions: () => randAnimTrigger(2)},

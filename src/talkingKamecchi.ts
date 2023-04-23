@@ -16,7 +16,7 @@ function animTrigger(index: number) {
 // chatGPTが間に合わなかった場合のバックアップダイアログ
 const kamecchiDialog: Dialog[] = [
     { // 0
-        text: "ようこそへ！来てくれてうれしく思います。どうぞ、くつろいでください。ご注文は何でしょうか？",
+        text: "かめっちの部屋へようこそ！飲み物は何にしますか？",
         isQuestion: true,
         buttons: [
             {label: 'おすすめは', goToDialog: 1, triggeredActions: () => animTrigger(2)},
